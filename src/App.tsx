@@ -2,7 +2,8 @@ import { Box, Toolbar } from '@mui/material'
 import Appbar from './components/Appbar'
 import { CarouselApp } from './components/CarouselApp'
 import Cartao from './components/Cartao'
-import Propostas from './components/Propostas'
+import Contato from './components/Contato'
+import Rodape from './components/Rodape'
 // import CarouselApp from './components/CarouselApp'
 // import { Carousel } from './components/CarouselApp'
 
@@ -13,8 +14,9 @@ function App() {
     <>
       <Appbar/>
       <CarouselApp/>
-      <Propostas/>
       <Cartao/>
+      <Contato/>
+      <Rodape/>
       {/* <Toolbar /> */}
       {/* <Box>
         <CarouselApp/>
