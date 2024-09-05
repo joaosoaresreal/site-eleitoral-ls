@@ -1,5 +1,6 @@
-import { AppBar, Container, CssBaseline, Slide, Toolbar, Typography, useScrollTrigger, Box } from '@mui/material';
+import { AppBar, Container, CssBaseline, Slide, Toolbar, useScrollTrigger, Box } from '@mui/material';
 import React from 'react';
+import logo from './../assets/img/logo.png'
 
 interface Props {
   window?: () => Window;
@@ -22,19 +23,19 @@ function Appbar(props: Props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar sx={{backgroundColor: "#005CA9"}}>
           <Toolbar>
             <Box display="flex" justifyContent="center" alignItems="center" sx={{maxWidth: '100px'}}>
               <img
-                src="src\assets\img\logo.png"
+                src={logo}
                 alt="Vote 10777"
                 style={{ maxWidth: "100%", height: "auto" }}
               />
             </Box>
 
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            {/* <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               Minha App
-            </Typography>
+            </Typography> */}
           </Toolbar>
         </AppBar>
       </HideOnScroll>
