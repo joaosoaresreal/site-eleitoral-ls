@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Divider, Link, Typography } from "@mui/material";
 import { EnvelopeSimple, FacebookLogo, InstagramLogo, WhatsappLogo } from "@phosphor-icons/react";
 import logo from './../assets/img/logo.png'
 
@@ -8,6 +8,7 @@ const rodape = {
     paddingRight: '10%',
     paddingLeft: '10%',
     paddingTop: '2%',
+    paddingBottom: '3%'
 }
 
 
@@ -20,52 +21,38 @@ const contatos = {
 }
 
 const logos = {
-    border: '2px solid #fff0ff',
-    borderRadius: '50%', // Define um círculo perfeito
-    height: '50px',
-    width: '50px', // Define a largura igual à altura
+    // border: '2px solid #000',
+    // borderRadius: '50%', // Define um círculo perfeito
+    height: '60px',
+    width: '60px', // Define a largura igual à altura
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     transition: 'background-color 0.3s', // Suaviza a transição da cor de fundo
     padding: 0,
-    '&:hover': {
-        backgroundColor: '#1d1d1d', // Cor de fundo ao passar o mouse
-    },
+    // '&:hover': {
+    //     backgroundColor: '#1d1d1d', // Cor de fundo ao passar o mouse
+    // },
 }
 
 const Rodape = () => {
     return (
-        <Box sx={rodape}>
-            <Box sx={{ textAlign: 'center', paddingBottom: '2%' }}>
-                <Typography variant="h6" component="h1">
-                    REPUBLICANOS / MDB / PODE / PSB / UNIÃO / PSD / Federação PSDB CIDADANIA (PSDB/CIDADANIA)
-                </Typography>
-                <Typography variant="h6" component="h1">
-                    Federação BRASIL DA ESPERANÇA - FE BRASIL (PT/PC do B/PV)
-                </Typography>
-                <Typography variant="h6" component="h1">
-                    CNPJ: 56.470.575/0001-22
-                </Typography>
-            </Box>
-
+        <Box sx={rodape} id="saibaMais">
             <Box sx={contatos}>
-
-
                 <Box>
                     <Typography variant="h6" component="h1">
                         Saiba Mais
                     </Typography>
-                    <Box sx={{ display: 'flex', gap: '2%' }}>
+                    <Box sx={{ display: 'flex', gap: '3%' }}>
                         <Box sx={logos}>
                             <Link href="https://www.instagram.com/lourdes.struziati" target="_blank" sx={{ textDecoration: 'none', color: '#fff0ff', display: 'flex' }}>
-                                <InstagramLogo size={40} weight="duotone" />
+                                <InstagramLogo size={50} weight="duotone" />
                             </Link>
                         </Box>
 
                         <Box sx={logos}>
                             <Link href="https://www.facebook.com/lourdes.struziati" target="_blank" sx={{ textDecoration: 'none', color: '#fff0ff', display: 'flex' }}>
-                                <FacebookLogo size={40} weight="duotone" />
+                                <FacebookLogo size={50} weight="duotone" />
                             </Link>
                         </Box>
 
@@ -111,6 +98,19 @@ const Rodape = () => {
                         style={{ maxWidth: "100%", height: "auto" }}
                     />
                 </Box>
+            </Box>
+
+            <Divider sx={{ opacity: 0.8, paddingTop: '2%' }}/>
+            <Box sx={{ textAlign: 'center', paddingTop: '2%' }}>
+                <Typography component="h1">
+                    REPUBLICANOS / MDB / PODE / PSB / UNIÃO / PSD / Federação PSDB CIDADANIA (PSDB/CIDADANIA)
+                </Typography>
+                <Typography component="h1">
+                    Federação BRASIL DA ESPERANÇA - FE BRASIL (PT/PC do B/PV)
+                </Typography>
+                <Typography component="h1">
+                    CNPJ: 56.470.575/0001-22
+                </Typography>
             </Box>
 
             {/* <Box sx={{

@@ -1,20 +1,20 @@
 import { Box } from "@mui/material";
-import capa from "./../assets/img/capa-site.png"
-import quemsou from "./../assets/img/quem-sou-eu.png"
-import galeria from "./../assets/img/galeria-fotos.png"
-import sobre from "./../assets/img/sobre.png"
+import capa from "./../assets/img/capa-site.jpg"
+import quemsou from "./../assets/img/quem-sou-eu.jpg"
+import galeria from "./../assets/img/galeria-fotos.jpg"
+import sobre from "./../assets/img/sobre.jpg"
 
 export function CarouselApp() {
     return (
         <>
-            <Box display="flex" justifyContent="center" alignItems="center">
+            <Box display="flex" justifyContent="center" alignItems="center" id="home">
                 <img 
                     src={capa}
                     alt="Vote 10777"
                     style={{ maxWidth: "100%", height: "auto" }}
                 />
             </Box>
-            <Box display="flex" justifyContent="center" alignItems="center">
+            <Box display="flex" justifyContent="center" alignItems="center" id="quemsou">
                 <img 
                     src={quemsou} 
                     alt="Vote 10777"

@@ -129,14 +129,14 @@ const Inclusao = () => {
 
 const CartoesLayout = () => {
   return (
-    <Box sx={{
+    <Box id="propostas" sx={{
       padding: 4,
       background: '#005CA9',
       maxWidth: '100%',
       paddingLeft: '10%',
       paddingRight: '10%',
     }}>
-      <Typography variant="h5" component="h1" align="center" color={'#FFF'} gutterBottom>
+      <Typography variant="h5" component="h1" align="center" color={'#FFF'} gutterBottom sx={{paddingBottom: '1%'}}>
         CONHEÇA MINHAS PROPOSTAS
       </Typography>
 
