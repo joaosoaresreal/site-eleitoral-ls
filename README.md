@@ -2,6 +2,9 @@
 
 Este site foi desenvolvido para a campanha eleitoral de 2024 da candidata a Vereadora da cidade de Itaporã - MS, Lourdes Struziati.
 
+## :camera: Visão do site:
+![Site Completo](src\assets\site-completo.png)
+
 ## :boom: Tecnologias Utilizadas
 
 - **[React](https://react.dev/)**: Biblioteca JavaScript para construção de interfaces de usuário.
